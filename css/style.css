@@ -1,0 +1,24 @@
+html,
+body{
+    margin:0;
+    font-family: 'Open Sans'
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background: #3f3035;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: white;
+}
+.header_title{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.header_edit,
+.header_title{
+    margin-right: auto;
+}
