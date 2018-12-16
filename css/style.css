@@ -1,24 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 html,
 body{
     margin:0;
-    font-family: 'Open Sans'
+    font-family: 'Open Sans' sans-serif;
 }
 
 .header{
-    display:flex;
-    justify-content:space-between;
     align-items: center;
     background: #3f3035;
-    padding: 10px 5px;
+    padding:10px 20px 18px 20px;
     box-sizing: border-box;
     color: white;
+    width: 100%;
 }
-.header_title{
-    margin: 0;
+.header .header_top{
+    position: relative;
+}
+
+.header_top .header_title{
     font-size: 18px;
+    line-height: 20px;
     font-weight: 300;
 }
-.header_edit,
-.header_title{
-    margin-right: auto;
+.header_top .header_buttons{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0;
+}
+.header_top .header_buttons button{
+    display: inline-block;
+    vertical-align: top;
+    background: none;
+    outline: none;
+    border: 0 none;
+    color:#645a55;
+    width:12px;
+    height: 12px;
+    margin-left: 12px;
+    font-size: 17px;
+}
+.header_top .header_buttons button:first-child{
+    margin-left: 0;
+    margin-bottom: -10px;
+}
+.header_top .header_buttons button{
+
+}
+.header_bottom{
+    position: relative;
+    margin-top:10px;
+}
+.header_bottom .header_bottom_left{
+    font-size: 0;
+}
+.header_bottom .header_bottom_left button{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 27px;
+    background: none;
+    outline: none;
+    border: 0 none;
+    color:#594e49;
+    margin-left: 20px;
+}
+.header_bottom .header_bottom_left button:first-child{
+    margin-left: 0;
+
+}
+.header_bottom .header_bottom_right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0;
+}
+.header_bottom .header_bottom_right button{
+    display:inline-block;
+    vertical-align: top;
+    background: none;
+    outline: none;
+    border: 0 none;
+    color:#594e49;
+    border: 1px solid #362c27;
+    border-radius: 50%;
+    font-size: 17px;
+    margin-left: 4px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.header_bottom .header_bottom_right button:first-child{
+    margin-left: 0;
 }
