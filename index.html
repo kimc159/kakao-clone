@@ -11,19 +11,46 @@
 </head>
 <body>
     <header class="header">
-        <span class="header_edit">Edit</span>
-        <h2 class="header_title">Chats <i class="fa fa-caret-down"></i></h2>
-    </header>
-    <section class="chats">
-        <div class="chat">
-            <img src="images/avatar.jpg" alt="" class="chat_avatar">
-            <div class="chat_text">
-                <span class="chat_username">이주열</span>
-                <span class="chat_preview">첫번째 채팅방</span>
+        <div class="header_top">
+            <h1 class="header_title">kakaotalk</h1>
+            <div class="header_buttons">
+                <button class="header_down"><i class="fa fa-minus"></i></button>
+                <button class="header_max"><i class="fa fa-square"></i></button>
+                <button class="header_close"><i class="fa fa-times"></i></button>
             </div>
-            <span class="chat_date">today</span>
         </div>
-    </section>
+        <div class="header_bottom">
+            <div class="header_bottom_left">
+                <button class="header_user"><i class="fa fa-user"></i></button>
+                <button class="header_preview"><i class="fa fa-comment"></i></button>
+                <button class="header_more"><i class="fa fa-ellipsis-h"></i></button>
+            </div>
+            <div class="header_bottom_right">
+                <button class="header_alarm"><i class="fa fa-bell"></i></button>
+                <button class="header_menu"><i class="fa fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <section class="search">
+            <div class="searh_inner">
+                <input type="text" class="search_text">
+                <button class="searh_sort">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </section>
+        <section class="chats">
+            <div class="chat">
+                <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                <div class="chat_text">
+                    <span class="chat_username">이주열</span>
+                    <span class="chat_preview">첫번째 채팅방</span>
+                </div>
+                <span class="chat_date">today</span>
+            </div>
+        </section>
+    </div>
     <footer>
         <footer class="footer">
             <div class="footer_icon">
