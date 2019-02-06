@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR:300,400,500,700');
+
+* {margin:0;padding:0;}
+body, button,input, select, textarea {color:#666; font-size:18px; font-family: 'Noto Sans KR', '돋움', dotum, sans-serif;}
+a {color:#666;text-decoration:none;}
+ol,ul {list-style:none;}
+fieldset, img {border:0;}
+img{-webkit-user-drag: none;}
+address, em {font-style:normal;}
+table {width:100%;border-collapse:collapse;border:0;}
+legend, caption {visibility:hidden; overflow:hidden; width:0;height:0;font-size:0;line-height:0;}
+button {overflow:visible;cursor:pointer;background:none;border:0; outline:none;}
+input, select, textarea, button, label, td img {vertical-align:middle;} 
+
+a:hover, a:focus {text-decoration:none;}
+
+input[type=submit],
+input[type=reset],
+input[type=button]{overflow:visible; margin:0; padding:0; border:0; border-radius:0; cursor:pointer; background:transparent;}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, section {display:block;}
+/* iphone style */
+body{-webkit-text-size-adjust:100%;}
+
+
+/* .skipNavi li {font-size:0;line-height:0;}
+.skipNavi li a {position:fixed;top:-100px;left:0;width:100%;padding:10px 0;background:#044894;color:#fff;font-size:14px;line-height:2;text-align:center;z-index:500;}
+.skipNavi li a:focus {top:0;} */
+
+/* iphone X
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+    #header{padding-top:40px;}
+    #header .gnb .gnbBtn{top:58px;}
+    #header .gnb .gnbBtn.showGnb{top:57px;}
+} */
