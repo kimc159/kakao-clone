@@ -22,9 +22,9 @@
         </div>
         <div class="header_bottom">
             <div class="header_bottom_left">
-                <button class="header_user"><i class="fa fa-user"></i></button>
-                <button class="header_preview"><i class="fa fa-comment"></i></button>
-                <button class="header_more"><i class="fa fa-ellipsis-h"></i></button>
+                <button class="header_user" onclick="user_show()"><i class="fa fa-user"></i></button>
+                <button class="header_preview" onclick="preview_show()"><i class="fa fa-comment"></i></button>
+                <button class="header_more" onclick="view_more_show()"><i class="fa fa-ellipsis-h"></i></button>
             </div>
             <div class="header_bottom_right">
                 <button class="header_alarm"><i class="fa fa-bell"></i></button>
@@ -36,92 +36,243 @@
         <section class="search">
             <div class="search_inner">
                 <input type="text" class="search_text" placeholder="채팅방 이름, 참여자 검색">
-                <button class="search_sort">
+                <button class="search_sort on">
                     <i class="fa fa-bars"></i>
                 </button>
             </div>
         </section>
-        <section class="chats">
-            <div class="chat">
-                <img src="images/avatar.jpg" alt="" class="chat_avatar">
-                <div class="chat_text">
-                    <p class="chat_username">이주열</p>
-                    <p class="chat_preview">첫번째 채팅방</p>
+        <article class="chat_preview_wrap">
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
                 </div>
-                <span class="chat_date">today</span>
-            </div>
-        </section>
-        <section class="chats">
-            <div class="chat">
-                <img src="images/avatar.jpg" alt="" class="chat_avatar">
-                <div class="chat_text">
-                    <p class="chat_username">이주열</p>
-                    <p class="chat_preview">첫번째 채팅방</p>
+            </section>
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
                 </div>
-                <span class="chat_date">today</span>
-            </div>
-        </section>
-        <section class="chats">
-            <div class="chat">
-                <img src="images/avatar.jpg" alt="" class="chat_avatar">
-                <div class="chat_text">
-                    <p class="chat_username">이주열</p>
-                    <p class="chat_preview">첫번째 채팅방</p>
+            </section>
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
                 </div>
-                <span class="chat_date">today</span>
-            </div>
-        </section>
-        <section class="chats">
-            <div class="chat">
-                <img src="images/avatar.jpg" alt="" class="chat_avatar">
-                <div class="chat_text">
-                    <p class="chat_username">이주열</p>
-                    <p class="chat_preview">첫번째 채팅방</p>
+            </section>
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
                 </div>
-                <span class="chat_date">today</span>
-            </div>
-        </section>
-        <section class="chats">
-            <div class="chat">
-                <img src="images/avatar.jpg" alt="" class="chat_avatar">
-                <div class="chat_text">
-                    <p class="chat_username">이주열</p>
-                    <p class="chat_preview">첫번째 채팅방</p>
+            </section>
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
                 </div>
-                <span class="chat_date">today</span>
-            </div>
-        </section>
-        <section class="chats">
-            <div class="chat">
-                <img src="images/avatar.jpg" alt="" class="chat_avatar">
-                <div class="chat_text">
-                    <p class="chat_username">이주열</p>
-                    <p class="chat_preview">첫번째 채팅방</p>
+            </section>
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
                 </div>
-                <span class="chat_date">today</span>
+            </section>
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
+                </div>
+            </section>
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
+                </div>
+            </section>
+            <section class="chats">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_preview">첫번째 채팅방</p>
+                    </div>
+                    <span class="chat_date">today</span>
+                </div>
+            </section>
+            <div class="chat_more">
+                <div class="chat_inner">
+                    <div class="background_black"></div>
+                    <button type="button" class="chat_more_plus" onclick="chat_more_open(this)">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                    <ul class="chat_more_list">
+                        <li>
+                            <span class="chat_open">오픈 채팅</span>
+                            <button type="button" class="chat_img">
+                                <i class="fa fa-comments"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <span class="chat_normal">일반 채팅</span>
+                            <button type="button" class="chat_img">
+                                <i class="fa fa-comment"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        <div class="chat_more">
-            <div class="chat_inner">
-                <div class="background_black"></div>
-                <button type="button" class="chat_more_plus" onclick="chat_more_open(this)">
-                    <i class="fa fa-plus"></i>
-                </button>
-                <ul class="chat_more_list">
-                    <li>
-                        <span class="chat_open">오픈 채팅</span>
-                        <button type="button" class="chat_img">
-                            <i class="fa fa-comments"></i>
-                        </button>
-                    </li>
-                    <li>
-                        <span class="chat_normal">일반 채팅</span>
-                        <button type="button" class="chat_img">
-                            <i class="fa fa-comment"></i>
-                        </button>
-                    </li>
-                </ul>
+        </article>
+        <div class="chat_user_wrap on">
+            <p class="char_user_title">내 프로필</p>
+            <section class="chats chat_my_profile">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                    </div>
+                    <span class="chat_date">이모티콘선물</span>
+                </div>
+            </section>
+            <p class="char_user_title">오늘 생일인 친구</p>
+            <section class="chats chat_today_birth">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                    </div>
+                    <span class="chat_date">이모티콘선물</span>
+                </div>
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                    </div>
+                    <span class="chat_date">이모티콘선물</span>
+                </div>
+            </section>
+            <p class="char_user_title">즐겨찾기</p>
+            <section class="chats chat_favorites">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                    </div>
+                </div>
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                    </div>
+                </div>
+            </section>
+            <p class="char_user_title">플러스친구</p>
+            <section class="chats chat_plus_friends">
+                <div class="chat">
+                    <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                    <div class="chat_text">
+                        <p class="chat_username">이주열</p>
+                        <p class="chat_friends_num"></p>
+                    </div>
+                </div>
+            </section>
+            <p class="char_user_title">친구 <span>656</span></p>
+            <article class="chats chat_total_friends_wrap">
+               <section class="chat_total_friends">
+                    <div class="chat">
+                        <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                        <div class="chat_text">
+                            <p class="chat_username">이주열</p>
+                            <p class="chat_friends_num"></p>
+                        </div>
+                    </div>
+               </section>
+               <section class="chat_total_friends">
+                    <div class="chat">
+                        <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                        <div class="chat_text">
+                            <p class="chat_username">이주열</p>
+                            <p class="chat_friends_num"></p>
+                        </div>
+                    </div>
+               </section>
+               <section class="chat_total_friends">
+                    <div class="chat">
+                        <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                        <div class="chat_text">
+                            <p class="chat_username">이주열</p>
+                            <p class="chat_friends_num"></p>
+                        </div>
+                    </div>
+               </section>
+               <section class="chat_total_friends">
+                    <div class="chat">
+                        <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                        <div class="chat_text">
+                            <p class="chat_username">이주열</p>
+                            <p class="chat_friends_num"></p>
+                        </div>
+                    </div>
+               </section>
+               <section class="chat_total_friends">
+                    <div class="chat">
+                        <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                        <div class="chat_text">
+                            <p class="chat_username">이주열</p>
+                            <p class="chat_friends_num"></p>
+                        </div>
+                    </div>
+               </section>
+               <section class="chat_total_friends">
+                    <div class="chat">
+                        <img src="images/avatar.jpg" alt="" class="chat_avatar">
+                        <div class="chat_text">
+                            <p class="chat_username">이주열</p>
+                            <p class="chat_friends_num"></p>
+                        </div>
+                    </div>
+               </section>
+            </article>
+        </div>
+        <div class="chat_view_more on">
+            <div class="chat_my_info">
+
             </div>
+            <article>
+
+            </article>
         </div>
     </div>
     <!-- <footer class="footer">
