@@ -9,11 +9,13 @@ function chat_more_open(thisobj){
 function preview_show() {
     var preview = $(".chat_preview_wrap");
     var user = $(".chat_user_wrap");
+    var search = $(".search");
     var view_more = $(".chat_view_more");
     var search_text = $(".search_text");
     var search_btn = $(".search_sort");
 
     preview.addClass("on");
+    search.addClass("on");
     search_btn.addClass("on");
     user.removeClass("on");
     view_more.removeClass("on");
@@ -24,10 +26,12 @@ function user_show(){
     var preview = $(".chat_preview_wrap");
     var user = $(".chat_user_wrap");
     var view_more = $(".chat_view_more");
+    var search = $(".search");
     var search_text = $(".search_text");
     var search_btn = $(".search_sort");
 
     user.addClass("on");
+    search.addClass("on");
     preview.removeClass("on");
     search_btn.removeClass("on");
     view_more.removeClass("on");
