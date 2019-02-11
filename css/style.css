@@ -127,3 +127,22 @@
 /* user list */
 .content .chat_user_wrap .chats .chat .chat_text .chat_username{height: 50px; line-height: 50px;}
 .char_user_title{font-size: 14px; padding: 10px 10px 0 10px; box-sizing: border-box;}
+
+/* 마이 페이지 */
+.chat_view_more .chat_my_info{position: relative; height: 100px; padding: 20px 10px; background: #f8f8f8; box-sizing: border-box;}
+.chat_view_more .chat_my_info .my_avatar{position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 50px; height: 50px; border-radius: 50%;}
+.chat_view_more .chat_my_info .chat_text{padding-left: 70px; box-sizing: border-box;}
+.chat_view_more .chat_my_info .chat_text .chat_my_name{font-size: 17px;line-height: 22px;font-weight: 700;color: #262626;box-sizing: border-box;}
+.chat_view_more .chat_my_info .chat_text .chat_my_account,
+.chat_view_more .chat_my_info .chat_text .chat_my_id{position: relative; margin-top: 5px;font-size: 13px;line-height: 13px;font-weight: 400;color: #737373;}
+.chat_view_more .chat_my_info .chat_text .chat_my_account .account_span1,
+.chat_view_more .chat_my_info .chat_text .chat_my_id .id_span1{position: absolute;left: 0;top: 0; color:#999;}
+.chat_view_more .chat_my_info .chat_text .chat_my_account .account_span2,
+.chat_view_more .chat_my_info .chat_text .chat_my_id .id_span2{padding-left: 30px;}
+.chat_view_more .chat_my_info .chat_my_new{position: absolute; right: 10px; top: 40px; width: 20px; color: #bfbfbf;font-size: 14px; line-height: 16px; font-weight: 300;}
+.chat_view_more .chat_my_info .chat_my_new img{width: 100%;}
+.chat_view_more .chat_my_list{position: relative; margin-top:5px; padding: 10px 20px; box-sizing: border-box;}
+.chat_view_more .chat_my_list:first-child{margin-top: 0;}
+.chat_view_more .chat_my_list .chat_my_icon{position: absolute; left: 20px; top: 10px; width: 15px;}
+.chat_view_more .chat_my_list.type_first .chat_my_icon{width: 10px;}
+.chat_view_more .chat_my_list .chat_my_text{margin-top: 1px;padding-left: 30px;font-size: 15px;line-height: 15px;font-weight: 400;color: #262626; box-sizing: border-box;}
